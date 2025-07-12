@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Target Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Agent Monthly Target Calculator</h2>
+
+    <label for="startMonth">Select First Month:</label>
+    <input type="month" id="startMonth" onchange="generateMonthSections()" />
+
+    <div id="months"></div>
+
+    <div class="result" id="result"></div>
+    <div class="chart-container">
+      <canvas id="chart" height="150"></canvas>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Target Calculator. All rights reserved.</p>
+    <p>Crafted with caffeine, code, and a little bit of chaos.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

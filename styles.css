@@ -1,0 +1,98 @@
+:root {
+  --primary: #4CAF50;
+  --bg: #f9f9f9;
+  --card-bg: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --text: #333;
+  --error: #d32f2f;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 15px var(--shadow);
+  border-radius: 12px;
+}
+
+h2 {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.month-section {
+  margin-top: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.result {
+  margin-top: 25px;
+  font-size: 1.1em;
+  color: var(--text);
+  background-color: #e9f7ee;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid var(--primary);
+}
+
+.chart-container {
+  margin-top: 30px;
+}
+
+.dark-mode {
+  --bg: #1e1e1e;
+  --card-bg: #2c2c2c;
+  --text: #e0e0e0;
+}
+
+.toggle {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.toggle button {
+  background: none;
+  border: 1px solid var(--primary);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--primary);
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: var(--text);
+}
